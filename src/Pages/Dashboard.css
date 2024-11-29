@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 85vh;
+    /* width: 100vw; */
+}
+
+.bg::before{
+    z-index: -1;
+    background-image: url(../Assest/Images/home_bg.webp);
+    filter: blur(4px) brightness(1);
+    background-size: cover; 
+    background-position: center; 
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bgColour{
+    flex: 5;
+    height: 100%;
+    background-color: #1a4d2e75;
+}
+
+.banner{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.topBannerLeft{
+    flex: 5;
+    flex-direction: row;
+}
+
+.topBannerRight{
+    flex: 5;
+}
+
+.greenCredit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.green{
+    color: #ffffff;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../Assest/font/Roboto-Bold.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.credit{
+    color: #e8dfca;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 40px;
+}
+
+.topBannerRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.topBannerRight button{
+    height: 55px;
+    width: 170px;
+    border-radius: 30px;
+    font-family: 'CustomFont', sans-serif;
+    border: none;
+    background-color: #e8dfca;
+    font-size: 15px;
+}
+
+.firsrParagraph{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #e8dfca;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.secondParagraph{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #e8dfca;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bannerBottom{
+    text-justify: auto;
+}
+
+.about{
+    background-color: #1a4d2e;;
+    height: 85vh; 
+}
+
+.aboutUs{
+    padding: 60px;
+    padding-left: 40vh;
+    text-align: left;
+    font-size: 45px;
+    font-weight: bold;
+    color: #e8dfca;
+}
+
+.mission{
+    padding-left: 60vh;
+}
+
+.Vision{
+    padding-left: 36vh;
+}
+
+.partner{
+    padding-left: 60vh;
+}
+
+.overView{
+    background-color: #4f6f52;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.overViewImage{
+    display: flex;
+    flex: 4;
+    justify-content: right;
+    margin-right: 5vh;
+    margin-top: 12vh;
+
+
+}
+
+.overViewDiscription{
+    display: flex;
+    /* padding-right: 20vh; */
+    flex-direction: column;
+    flex: 6;
+    margin-top: 12vh;
+    margin-left: 5vh;
+
+}
+
+.overView_Image{
+    height: 50vh;
+    width: 40vh;
+}
+
+.overViewHeading{
+    color: #f5efe6;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.overViewTopic_01{
+    margin-top: 5vh;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.overViewPara_01{
+    padding-right: 35vh;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.overViewTopic_02{
+    margin-top: 5vh;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.overViewPara_02{
+    padding-right: 35vh;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.btnShopNow{
+    color: #1a4d2e;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 40px;
+    width: 170px;
+    border-radius: 30px;
+    font-family: 'CustomFont', sans-serif;
+    border: none;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.produceSalesOverView{
+    background-color: #769863;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.produceSalesTopic{
+    padding-top: 5vh;
+    padding-left: 30vh;
+    color: #e8dfca;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.produceOverViewContainer{
+    /* padding-left: 30vh; */
+    margin-left: 30vh;
+    height: 10vh;
+    width: 130vh;
+    background-color:#b7c09d;
+    align-items: center;
+    border-radius: 40px;
+    padding-top: 5px;
+}
+
+.overViewText{
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: #5d7e5d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.overViewCards{
+    display: flex;
+    flex-direction: row;
+    margin-left: 33vh;
+}
+
+.btnProductSalesOverview{
+    margin-top: 10px;
+    height: 40px;
+    width: 170px;
+    font-weight: bold;
+    background-color: #1a4d2e;
+    color: #e8dfca;
+    border: none;
+    margin-left: 88vh;
+}
+
+.CarbonCreditOverView{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 75vh;
+}
+
+.CarbonCreditOverView::before{
+    z-index: -1;
+    background-image: url(../Assest/Images/home_bg.webp);
+    filter: blur(4px) brightness(1);
+    background-size: cover; 
+    background-position: center; 
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.topicAndGadge{
+    display:flex;
+    flex-direction: row;
+}
+
+.gadge{
+    height: 40vh;
+    width: 40vh;
+    margin-top: 8vh;
+    margin-left: 16vh;
+}
+
+.CrabonCreditOverViewTopic{
+    flex: 5;
+    color: #e8dfca;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10vh;
+    margin-left: 30vh;
+}
+
+.gadgeDiscriptionAndButton{
+    flex: 5;
+    height: auto;
+    width: 50vh;
+    margin-top: 20vh;
+    margin-left: 15vh;
+}
+
+.gadgeDiscriptionAndButton p{
+    color: #f5efe6;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btnCarbonCreditOverView{
+    margin-top: 50px;
+    height: 40px;
+    width: 170px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #f5efe6;
+    color: #1a4d2e;
+    border: none;
+    font-size: 15px;
+}
+
+.UrbanFarmingPartnrship{
+    background-color: #4f6f52;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.UrbanFarmingPartnrshipTopic{
+    padding-top: 12vh;
+    padding-bottom: 2vh;
+    padding-left: 58vh;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.parnershipCards{
+    display: flex;
+    flex-direction: row;
+    margin-left: 33vh;
+}
+
+.OurProjects{
+    background-color: #769863;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.OurProjectsTopic{
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    padding-left: 72vh;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.ProjectsCards{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 33vh;
+}
+
+.ReviewsContainer{
+    align-items: center;
+    text-align: center;
+    background-color: #1a4d2e;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+
+.bgImage_reviews{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32.5vh;
+    width: 130vh;
+    height: 80vh;
+    z-index: -1;
+    background-image: url(../Assest/Images/review_bg.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.ReviewTopicContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 55vh;
+    height: 8vh;
+    width: 20vh;
+    background-color:#6f9148;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.ReviewTopic{
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: #0c0c0c;
+    font-weight: bolder;
+}
+
+.ReviewColomns{
+    display: flex;
+    flex-direction: column;
+}
+
+.ReviewFirstColomn{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ReviewSecondColomn{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

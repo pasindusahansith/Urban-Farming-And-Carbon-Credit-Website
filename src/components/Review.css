@@ -1,0 +1,28 @@
+.Reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45vh;
+    height: 25vh;
+    border-radius: 10%;
+    background-color: #65843d;
+    margin: 3vh;
+    color: yellow;
+    padding: 20px;
+}
+
+.ReviewDiscription{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.ReviewerName{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.star{
+    margin: 10px;
+}

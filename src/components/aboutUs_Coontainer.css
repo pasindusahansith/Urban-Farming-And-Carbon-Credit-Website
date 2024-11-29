@@ -1,0 +1,29 @@
+.aboutUs_Container h3{
+    height: 50px;
+    width: 60px;
+    color: #1a4d2e;
+    font-size: 30px;
+
+}
+
+.aboutUs_Container p{
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    color: #1a4d2e;
+}
+
+.aboutUs_Container{
+    background-color: #9ca990;
+    width: 52vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+}
+
+
