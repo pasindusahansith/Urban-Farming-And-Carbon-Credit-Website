@@ -3,6 +3,7 @@
     
 }
 .navbar-container {
+  /* position: fixed; */
     padding-left: 47%;
     display: flex;
     flex-direction: column;

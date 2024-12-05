@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 85vh;
+    /* width: 100vw; */
+}
+
+.bg::before{
+    z-index: -1;
+    background-image: url(../Assest/Images/login_bg.jpg);
+    filter: blur(4px) brightness(1);
+    background-size: cover; 
+    background-position: center; 
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

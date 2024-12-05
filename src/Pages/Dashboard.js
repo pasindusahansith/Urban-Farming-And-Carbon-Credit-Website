@@ -48,8 +48,10 @@ function Dashboard (){
 
     return(
         <div>
-            <Navbar/>
-            <div className='bg'>
+            <div className='navbarDashboard'>
+                <Navbar/>
+            </div>
+            <div id="home" className='bg'>
                 <div className='bgColour'>
                     <div className='banner'>
                         <div className='topBannerLeft'>
@@ -79,7 +81,7 @@ function Dashboard (){
                     </div>
               </div>
             </div>
-            <div  className='about'>
+            <div id="about" className='about'>
                 <div className='aboutUs'>
                     ABOUT US
                 </div>
@@ -102,7 +104,7 @@ function Dashboard (){
                     />
                 </div>
             </div>
-            <div className='overView'>
+            <div id="urbanFarming" className='overView'>
                 <div className='overViewImage'>
                     <img src={overView_Image} className='overView_Image'>
                     </img>
@@ -137,7 +139,7 @@ function Dashboard (){
                     </div>
                 </div>
             </div>
-            <div className='produceSalesOverView'>
+            <div id="produceSales" className='produceSalesOverView'>
                 <div className='produceSalesTopic'>
                     <h1>
                         Produce Sales Overview
@@ -178,7 +180,7 @@ function Dashboard (){
                     Shop More ...
                 </button>
             </div>
-            <div className='CarbonCreditOverView'>
+            <div id="carbonCredit" className='CarbonCreditOverView'>
                 <div className='topicAndGadge'>
                     <div className='CrabonCreditOverViewTopic'>
                         <h1>
@@ -198,7 +200,7 @@ function Dashboard (){
                         </div>
                 </div>
             </div>
-            <div className='UrbanFarmingPartnrship'>
+            <div id="partnership" className='UrbanFarmingPartnrship'>
                 <div className='UrbanFarmingPartnrshipTopic'>
                     <h1>
                         Urban Farming Partnrship
@@ -232,7 +234,7 @@ function Dashboard (){
                 />
                 </div>
             </div>
-            <div className='OurProjects'>
+            <div id="projects" className='OurProjects'>
                 <div className='OurProjectsTopic'>
                     <h1>
                         OUR PROJECTS
@@ -266,7 +268,7 @@ function Dashboard (){
                 />
                 </div>
             </div>
-            <div className='ReviewsContainer'>
+            <div id="reviews" className='ReviewsContainer'>
                 <div className='bgImage_reviews'>
                     <div className='ReviewTopicContainer'>
                         <p className='ReviewTopic'>
@@ -297,7 +299,7 @@ function Dashboard (){
                     </div>             
                 </div>
             </div>
-            <div className='Footer'>
+            <div id="contact" className='Footer'>
                 <Footer />
             </div>
         </div>
