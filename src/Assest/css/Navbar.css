@@ -44,3 +44,37 @@
   li a:hover {
     color: #ebe8e8;
   }
+
+  @media screen and (max-width: 960px) {
+    .menu-icon {
+      display: flex;
+    }
+  
+    .nav-menu {
+      
+    }
+  
+    .nav-menu.active {
+      
+    }
+  
+    .nav-item {
+      
+    }
+
+    .navbar-container{
+      display: none;
+    }
+
+    .navbar{
+      height: 20vh;
+    }
+    
+    .mobile-navbar{
+      display: block;
+    }
+  }
+
+  .mobile-navbar{
+    display: none;
+  }

@@ -1,16 +1,18 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import './Dashboard.css';
+import '../Assest/css/Dashboard.css';
 import '../Assest/FA 6.4.0 Pro/css/all.min.css';
 import AboutUs_Container from '../components/aboutUs_Container';
-import overView_Image from '../Assest/Images/urban_farming_overview.jpg';
-import organicPlantMagicImg from '../Assest/Images/Product_01.webp';
+import overView_Image from '../Assest/images/urban_farming_overview.jpg';
+import organicPlantMagicImg from '../Assest/images/Product_01.webp';
 import ProduceSalesOverView_card from '../components/ProduceSalesOverView_card.js';
-import hydrooponicTower from '../Assest/Images/product_02.jpeg';
-import verticalGardnen from '../Assest/Images/Product_03.jpeg';
+import hydrooponicTower from '../Assest/images/product_02.jpeg';
+import verticalGardnen from '../Assest/images/Product_03.jpeg';
 import GaugeLeave from '../components/OverViewGadge.js';
 import Review from '../components/Review.js';
 import Footer from '../components/Footer.js';
+import Login from './login.js';
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard (){
     const mission="Mission";
@@ -44,6 +46,10 @@ function Dashboard (){
     const ReviewName03="- Isabella";
     const Review04="Urban Farming exceeded my expectations! Their sustainable practices and carbon credit initiatives are truly commendable. The staff is knowledgeable and passionate. Thank you, Urban Farming!”";
     const ReviewName04="-Rayan";
+    const navigate = useNavigate();
+    const handleLogout = () => {
+    navigate("/login"); 
+  };
 
 
     return(
@@ -65,8 +71,11 @@ function Dashboard (){
                             </div>     
                         </div>
                         <div className='topBannerRight'>
-                            <button><i class="fa-solid fa-user fa-xl"></i> Join with us ...</button>
+                            <button onClick={handleLogout}> 
+                                <i className="fa-solid fa-user fa-xl"></i> Join with us ...
+                            </button>
                         </div>
+
                     </div>
                     <div className='bannerBottom'>
                         <p className='firsrParagraph'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './aboutUs_Coontainer.css';
+import '../Assest/css/AboutUsContainer.css';
 
 function aboutUs_Container(props){
     return(

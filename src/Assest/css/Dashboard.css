@@ -14,7 +14,8 @@
 
 .bg::before{
     z-index: -1;
-    background-image: url(../Assest/Images/home_bg.webp);
+    /* background-image: url(../Assest/images/home_bg.webp); */
+    background-image: url(../images/home_bg.webp);
     filter: blur(4px) brightness(1);
     background-size: cover; 
     background-position: center; 
@@ -72,7 +73,8 @@
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('../Assest/font/Roboto-Bold.ttf') format('woff2');
+    /* src: url('../Assest/font/Roboto-Bold.ttf') format('woff2'); */
+    src: url('../font/Roboto-Bold.ttf') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
@@ -299,7 +301,8 @@
 
 .CarbonCreditOverView::before{
     z-index: -1;
-    background-image: url(../Assest/Images/home_bg.webp);
+    /* background-image: url(../Assest/images/home_bg.webp); */
+    background-image: url(../images/home_bg.webp);
     filter: blur(4px) brightness(1);
     background-size: cover; 
     background-position: center; 
@@ -420,7 +423,8 @@
     width: 130vh;
     height: 80vh;
     z-index: -1;
-    background-image: url(../Assest/Images/review_bg.jpeg);
+    /* background-image: url(../Assest/images/review_bg.jpeg); */
+    background-image: url(../images/review_bg.jpeg);
     background-size: cover; 
     background-position: center; 
     content: '';

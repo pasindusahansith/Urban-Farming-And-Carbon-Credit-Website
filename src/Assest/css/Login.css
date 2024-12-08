@@ -1,0 +1,134 @@
+.login-container {
+    background-image: url('../images/login_bg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containerleftlogin{
+    flex: 1;
+    text-align: right;
+    padding-right: 20vh;
+}
+
+.containerleftlogin h1{
+    font-size: 60px;
+    color: #ddd;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0);
+}
+
+.containerrightlogin{
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: start;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.8);
+    /* padding: 20px 30px; */
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 10px;
+    color: white;
+    max-width: 600px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-field input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+}
+
+
+.password-wrapper {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+
+.password-wrapper input {
+    flex: 1;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: darkgreen;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p a {
+    color: limegreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+label{
+    font-size: 20px;
+    /* margin-left: -20vh; */
+}
+
+form{
+    font-size: 30px;
+}
+
+.input-field label{
+    font-size: 25px;
+}
