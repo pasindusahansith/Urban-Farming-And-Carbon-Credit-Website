@@ -1,7 +1,14 @@
 import React from 'react';
 import '../Assest/css/Login.css';
-
+import SignUp from './signup';
+import { useNavigate } from 'react-router-dom';
+   
 const Login = () => {
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        navigate("/signup"); 
+        };
+
     return (
         <div className="login-container">
             <div className='containerleftlogin'>
@@ -27,7 +34,7 @@ const Login = () => {
                         <button className="login-button">LOG-IN</button>
                     </form>
                     <p>
-                        IF YOU DON'T HAVE AN ACCOUNT? <a href="/signup">SIGN-UP</a>
+                        IF YOU DON'T HAVE AN ACCOUNT? <a onClick={handleLogout}> Sign Up</a>
                     </p>
                 </div>
             </div>
