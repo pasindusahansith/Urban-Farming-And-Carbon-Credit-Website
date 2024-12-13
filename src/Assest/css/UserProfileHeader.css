@@ -1,0 +1,86 @@
+.user-profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f5e7; /* Matches the light beige background */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .profile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+  }
+
+  .profile-details{
+    max-width: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #074a3e; /* Dark green text */
+  }
+  
+  .action-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon-button {
+    background-color: #074a3e; /* Dark green */
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .icon-button:hover {
+    background-color: #056835; /* Slightly lighter green */
+  }
+  
+  .notification-icon::before {
+    content: "🔔"; /* Notification icon */
+    font-size: 1.2rem;
+  }
+  
+  .cart-icon::before {
+    content: "🛒"; /* Shopping cart icon */
+    font-size: 1.2rem;
+  }
+  
+  .co-icon::before {
+    content: "CO"; /* Placeholder for CO icon */
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  

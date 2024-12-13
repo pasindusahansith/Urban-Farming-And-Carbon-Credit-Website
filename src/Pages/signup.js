@@ -9,6 +9,14 @@ const SignUp = () => {
       navigate("/individualSignUp"); 
       };
 
+  const handleNonGov = () => {
+      navigate("/Nongovenment"); 
+      };
+
+  const handleGov = () => {
+      navigate("/Nongovenment"); 
+      };
+
   return (
     <div className="signup-container">
       <div className="signup-card">
@@ -17,10 +25,10 @@ const SignUp = () => {
         <button className="signup-button" onClick={handleLogout}>
           <i className="fas fa-seedling"></i> Individual Farming
         </button>
-        <button className="signup-button">
+        <button className="signup-button" onClick={handleNonGov}>
           <i className="fas fa-handshake"></i> Non-Government Organization
         </button>
-        <button className="signup-button">
+        <button className="signup-button" onClick={handleGov}>
           <i className="fas fa-balance-scale"></i> Government Organization
         </button>
       </div>

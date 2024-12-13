@@ -13,7 +13,7 @@
 }
 
 .ProduceSalesOverView_card h2 {
-    padding-top: 15px;
+    padding-top: 6px;
     font-size: 25px;
     font-weight: bold;
     color: inherit;
@@ -35,7 +35,7 @@
 }
 
 .ProduceSalesOverView_card p {
-    padding-top: 15px;
+    padding-top: 0;
     font-size: 22px;
     line-height: 1.5;
 }

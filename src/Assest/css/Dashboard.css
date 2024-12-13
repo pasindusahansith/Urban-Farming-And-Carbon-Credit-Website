@@ -101,6 +101,7 @@
     font-family: 'CustomFont', sans-serif;
     border: none;
     background-color: #e8dfca;
+    color: #000000;
     font-size: 15px;
 }
 
@@ -190,7 +191,7 @@
 
 .overViewHeading{
     color: #f5efe6;
-    font-size: 70px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -241,17 +242,17 @@
 
 .produceSalesOverView{
     background-color: #769863;
-    height: 85vh;
+    height: 90vh;
     align-items: center;
     justify-content: center;
 }
 
 .produceSalesTopic{
-    padding-top: 5vh;
-    padding-left: 30vh;
+    padding-top: 3vh;
+    padding-left: 5vh;
     color: #e8dfca;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .produceOverViewContainer{
@@ -282,7 +283,7 @@
 
 .btnProductSalesOverview{
     /* margin-top: 10px; */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     height: 40px;
     width: 170px;
     font-weight: bold;
@@ -296,7 +297,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 75vh;
+    height: 80vh;
 }
 
 .CarbonCreditOverView::before{
@@ -322,7 +323,7 @@
 .gadge{
     height: 40vh;
     width: 40vh;
-    margin-top: 8vh;
+    margin-top: 6vh;
     margin-left: 16vh;
 }
 
@@ -356,7 +357,7 @@
     border-radius: 30px;
     font-weight: bold;
     background-color: #f5efe6;
-    color: #1a4d2e;
+    color: #116633;
     border: none;
     font-size: 15px;
 }
@@ -369,23 +370,23 @@
 }
 
 .UrbanFarmingPartnrshipTopic{
-    padding-top: 12vh;
-    padding-bottom: 2vh;
-    padding-left: 58vh;
+    padding-top: 3vh;
+    padding-bottom: 0vh;
+    padding-left: 10vh;
     color: #ffffff;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .parnershipCards{
     display: flex;
     flex-direction: row;
-    margin-left: 33vh;
+    margin-left: 38vh;
 }
 
 .OurProjects{
     background-color: #769863;
-    height: 75vh;
+    height: 85vh;
     align-items: center;
     justify-content: center;
 }
@@ -393,7 +394,7 @@
 .OurProjectsTopic{
     padding-top: 10vh;
     padding-bottom: 2vh;
-    padding-left: 72vh;
+    padding-left: 10vh;
     color: #ffffff;
     font-weight: bold;
     font-size: 30px;
@@ -403,7 +404,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    margin-left: 33vh;
+    margin-left: 38vh;
 }
 
 .ReviewsContainer{

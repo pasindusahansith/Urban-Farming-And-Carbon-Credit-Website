@@ -120,9 +120,9 @@ function Dashboard (){
                 </div>
                 <div className='overViewDiscription'>
                     <div className='overViewHeading'>
-                        <p>
+                        <h1>
                         Urban Farming Overview
-                        </p>
+                        </h1>
                     </div>
                     <div className='importance'>
                         <p className='overViewTopic_01'>
@@ -203,7 +203,7 @@ function Dashboard (){
                             <p>
                             Carbon credits are certificates that represent the reduction of one metric ton of CO₂ emissions. They are earned through activities that lower or offset greenhouse gas emissions, such as reforestation or renewable energy projects. The purpose of carbon credits is to help reduce global greenhouse gas emissions by incentivizing organizations and individuals to engage in eco-friendly practices. Once emissions reductions are verified, credits are issued and can be traded in marketplaces, allowing companies to offset their carbon footprint by purchasing credits from projects that reduce or remove emissions.
                             </p>
-                            <button className='btnCarbonCreditOverView'>
+                            <button className='btnCarbonCreditOverView' onClick={() => navigate('/CarbonCredit')}>
                                 LEARN MORE ...
                             </button>
                         </div>

@@ -1,8 +1,14 @@
 import React from "react";
 import Switch from "@mui/material/Switch";
+import { useNavigate } from "react-router-dom";
 import "../Assest/css/IndividualSignUpNext.css";
 
 const IndividualSignUpNext = ({ data, onChange, onBack }) => {
+  const navigate = useNavigate();
+  const handleRegister = () => {
+    navigate("/Userprofile"); 
+  };
+
   return (
     <div className="signup-form-card">
       <h1>SIGN-UP</h1>
@@ -74,7 +80,9 @@ const IndividualSignUpNext = ({ data, onChange, onBack }) => {
         <button type="button" onClick={onBack}>
           BACK
         </button>
-        <button type="submit">REGISTER</button>
+        <button type="button" onClick={handleRegister}>
+          REGISTER
+        </button>
       </form>
     </div>
   );

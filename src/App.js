@@ -4,7 +4,11 @@ import Dashboard from './Pages/Dashboard';
 import Login from './Pages/login';
 import SignUp from './Pages/signup';
 import Individual from './Pages/Individual';
-import IndividualSignUpNext from './components/IndividualSignUpNext';
+import NonGovenment from './Pages/NonGov';
+import Govenment from './Pages/Gov';
+import Userprofile from './Pages/Userprofile';
+import CarbonCredit from './Pages/CarbonCredit';
+import CalcIndividual from './Pages/CalcIndividual';
 
 
 const App = () => {
@@ -16,7 +20,11 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/individualSignUp" element={<Individual/>} />
-          <Route path="/IndividualSignUpNext" element={<IndividualSignUpNext/>} />
+          <Route path="/Nongovenment" element={<NonGovenment/>} />
+          <Route path="/Govenment" element={<Govenment/>} />
+          <Route path="/Userprofile" element={<Userprofile />} />
+          <Route path="/CarbonCredit" element={<CarbonCredit />} />
+          <Route path="/CalcIndividual" element={<CalcIndividual />} />
         </Routes>
       </div>
     </Router>
