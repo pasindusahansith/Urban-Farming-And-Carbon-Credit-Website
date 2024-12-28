@@ -11,25 +11,29 @@ function CalcIndividual() {
 
   const options = [
     {
-      label: 'Backyard Garden (10 square feet)',
-      carbonOffset: 0.05,
+      label: 'Public Transportation Use (Monthly Commuter)',
+      carbonOffset: 0.20,
     },
     {
-      label: 'Rooftop Farm (500 square feet)',
-      carbonOffset: 0.30,
-    },
-    {
-      label: 'Community Garden (1,000 square feet)',
+      label: 'Switching to LED Streetlights (Per 100 lights)',
       carbonOffset: 1.00,
     },
     {
-      label: 'Hydroponic System (Home setup)',
-      carbonOffset: 0.02,
+      label: 'Biking Instead of Driving (500 miles/year)',
+      carbonOffset: 0.30,
     },
     {
-      label: 'Vertical Farming (20 racks)',
-      carbonOffset: 1.50,
+      label: 'Urban Tree Planting (Per 10 trees)',
+      carbonOffset: 0.10,
     },
+    {
+      label: 'Energy-Efficient Building Retrofit (Per Building)',
+      carbonOffset: 5.00,
+    },
+    {
+        label: 'Waste Recycling Program (City-wide initiative)',
+        carbonOffset: 1.50,
+      },
   ];
 
   const handleOptionChange = (event) => {
@@ -49,13 +53,13 @@ function CalcIndividual() {
     <div>
       {/* Header Section */}
       <header className="header">
-      <div className="logo">
+        <div className="logo">
           <h1 className='green'>Green</h1>
           <h1 className='credit'>Credit</h1>
         </div>
         <div className="buttons">
-          <button className="button active">Individual</button>
-          <button className="button" onClick={() => navigate('/CalcOrganization')}>Companies</button>
+          <button className="button" onClick={() => navigate('/CalcIndividual')}>Individual</button>
+          <button className="button active">Companies</button>
         </div>
       </header>
 

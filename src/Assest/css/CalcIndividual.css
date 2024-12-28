@@ -1,150 +1,228 @@
 /* General Styling */
 body {
-    background-color: #80C080; /* Green background */
-    font-family: Arial, sans-serif;
-    color: #fff; /* White text */
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2 {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  h1 {
-    font-size: 3em;
-  }
-  
-  h2 {
-    font-size: 2em;
-  }
-  
-  /* Carbon Credit Calculator Container */
-  .carbon-credit-calculator {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #699669; /* Dark green background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #fff; /* White text */
-  }
-  
-  .carbon-credit-calculator h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-  }
-  
-  /* Option Container */
-  .option-container {
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  .option-container select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1em;
-    background-color: #fff;
-    color: #699669;
-    font-weight: bold;
-  }
-  
-  .option-container select:focus {
-    outline: none;
-    border: 2px solid #d4e1d4; /* Light green border on focus */
-  }
-  
-  /* Input Container */
-  .input-container {
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  .input-container label {
-    font-size: 1.2em;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  
-  .input-container input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1em;
-    width: 60%;
-    max-width: 300px;
-    background-color: #fff;
-    color: #699669;
-    font-weight: bold;
-  }
-  
-  .input-container input:focus {
-    outline: none;
-    border: 2px solid #d4e1d4;
-  }
-  
-  /* Result Container */
-  .result-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #fff;
-    color: #699669;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .result-item {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .result-item p {
-    margin: 5px 0;
-    font-size: 1.2em;
-  }
-  
-  /* Navigation Buttons */
-  .buttons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    gap: 15px;
-  }
-  
-  .individual-button, .companies-button {
-    background-color: #fff;
-    color: #699669;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .individual-button:hover, .companies-button:hover {
-    background-color: #d4e1d4; /* Lighter green */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .result-container {
+  background-color: #80C080; /* Green background */
+  font-family: Arial, sans-serif;
+  color: #fff; /* White text */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4f9f4f; /* Green background for header */
+  color: white; /* White text */
+  font-family: Arial, sans-serif;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #d4e1d4; /* Light green */
+  color: #4f9f4f; /* Darker green text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #4f9f4f; /* Dark green text */
+}
+
+.button.active {
+  background-color: #4f9f4f; /* Dark green background for active button */
+  color: #ffffff; /* White text */
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  .header {
       flex-direction: column;
       align-items: center;
       text-align: center;
-    }
-  
-    .result-item {
-      margin-bottom: 15px;
-    }
-  
-    .input-container input {
-      width: 80%;
-    }
   }
-  
+
+  .buttons {
+      margin-top: 10px;
+  }
+}
+
+/* Carbon Credit Calculator Container */
+.carbon-credit-calculator {
+  max-width: 600px;
+  margin: 200px auto;
+  padding: 20px;
+  background-color: #699669; /* Dark green background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff; /* White text */
+}
+
+.carbon-credit-calculator h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Option Container */
+.option-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.option-container select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  background-color: #fff;
+  color: #699669;
+  font-weight: bold;
+}
+
+.option-container select:focus {
+  outline: none;
+  border: 2px solid #d4e1d4; /* Light green border on focus */
+}
+
+/* Input Container */
+.input-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.input-container label {
+  font-size: 1.2em;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  width: 60%;
+  max-width: 300px;
+  background-color: #fff;
+  color: #699669;
+  font-weight: bold;
+}
+
+.input-container input:focus {
+  outline: none;
+  border: 2px solid #d4e1d4;
+}
+
+/* Result Container */
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  color: #699669;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result-item {
+  flex: 1;
+  text-align: center;
+}
+
+.result-item p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+/* Navigation Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.individual-button, .companies-button {
+  background-color: #fff;
+  color: #699669;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.individual-button:hover, .companies-button:hover {
+  background-color: #d4e1d4; /* Lighter green */
+}
+
+.carbon-credit-button{
+    color: #699669;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 150px;
+    height: 60px;
+    width: 270px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    font-family: 'CustomFont', sans-serif;
+    border: none;
+    background-color: #ffffff;
+    font-size: 38px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .result-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .result-item {
+      margin-bottom: 15px;
+  }
+
+  .input-container input {
+      width: 80%;
+  }
+}

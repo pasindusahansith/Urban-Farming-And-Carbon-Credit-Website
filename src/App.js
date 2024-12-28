@@ -9,6 +9,7 @@ import Govenment from './Pages/Gov';
 import Userprofile from './Pages/Userprofile';
 import CarbonCredit from './Pages/CarbonCredit';
 import CalcIndividual from './Pages/CalcIndividual';
+import CalcOrganization from './Pages/CalcOrganization';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/Userprofile" element={<Userprofile />} />
           <Route path="/CarbonCredit" element={<CarbonCredit />} />
           <Route path="/CalcIndividual" element={<CalcIndividual />} />
+          <Route path="/CalcOrganization" element={<CalcOrganization />} />
         </Routes>
       </div>
     </Router>
