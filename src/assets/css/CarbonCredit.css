@@ -1,0 +1,165 @@
+/* Scoped styles for the Carbon Credit Page */
+#carbon-credit-page.carbon-credit-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    min-height: 100vh;
+  }
+  
+  /* Main content container inside Carbon Credit Page */
+  #carbon-credit-page .content {
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Page title styling inside Carbon Credit Page */
+  #carbon-credit-page .page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1d562b;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  
+  /* Company name in the intro */
+  #carbon-credit-page .company-name {
+    font-weight: bold;
+    color: #1d562b;
+  }
+  
+  /* Process Steps Section */
+  #carbon-credit-page .process-steps {
+    margin-top: 40px;
+  }
+  
+  #carbon-credit-page .process-steps h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+  
+  /* List of steps */
+  #carbon-credit-page .process-steps ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  #carbon-credit-page .process-steps li {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    padding-left: 40px;
+    position: relative;
+    color: #555;
+    font-weight: 500;
+    transition: transform 0.3s ease, color 0.3s ease, margin-left 0.3s ease;
+  }
+  
+  #carbon-credit-page .process-steps li:hover {
+    transform: translateX(15px);
+    color:  rgba(54, 94, 50, 0.8);
+    margin-left: 15px;
+  }
+  
+  #carbon-credit-page .process-steps li::before {
+    content: '';
+    width: 10px; /* Shrunk the circle size */
+    height: 10px; /* Shrunk the circle size */
+    background-color: #1d562b;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Call to Action Section */
+  #carbon-credit-page .call-to-action {
+    background-color: #1d562b;
+    padding: 50px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #carbon-credit-page .call-to-action:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    background-color:  rgba(54, 94, 50, 0.8);
+  }
+  
+  #carbon-credit-page .call-to-action p {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    padding: 15px;
+    line-height: 1.5;
+  }
+  
+  #carbon-credit-page .call-to-action a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1d562b;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 22px;
+    margin-top: 25px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #carbon-credit-page .call-to-action a:hover {
+    background-color:  rgba(54, 94, 50, 0.8);
+    transform: scale(1.05);
+    letter-spacing: 1px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    #carbon-credit-page .content {
+      padding: 25px;
+    }
+  
+    #carbon-credit-page .page-title {
+      font-size: 36px;
+    }
+  
+    #carbon-credit-page .process-steps h2 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  
+    #carbon-credit-page .process-steps li {
+      font-size: 18px;
+      margin-bottom: 30px;
+      padding-left: 35px;
+    }
+  
+    #carbon-credit-page .call-to-action p {
+      font-size: 22px;
+      padding: 12px;
+    }
+  
+    #carbon-credit-page .call-to-action a {
+      font-size: 20px;
+      padding: 14px 28px;
+      margin-top: 20px;
+    }
+  }
+  

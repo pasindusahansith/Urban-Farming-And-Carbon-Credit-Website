@@ -1,66 +1,118 @@
 import React from "react";
-import '../Assest/css/Footer.css';
+import { Link } from "react-router-dom";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaLeaf,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import "../styles/Footer.css";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
-      {/* <div className="footer-logo">
-        <img
-          src="path/to/your/logo.png"
-          alt="GreenCredit Logo"
-          className="footer-logo-img"
-        />
-      </div> */}
-
-    <div className="footer-main">
-        <h3 className="footer-title">CONTACT US</h3>
-
+      <div className="footer-top">
         <div className="footer-content">
-            <div className="footer-social">
-                <h4>CONNECT WITH US</h4>
-                <ul className="social-icons">
-                <li>
-                    <a href="#instagram">
-                        Instagram <i className="fa fa-instagram" aria-hidden="true"></i> 
-                    </a>
-                </li>
-                <li>
-                    <a href="#twitter">
-                        Twitter <i className="fa fa-twitter" aria-hidden="true"></i> 
-                    </a>
-                </li>
-                <li>
-                    <a href="#facebook">
-                        Facebook <i className="fa fa-facebook" aria-hidden="true"></i> 
-                    </a>
-                </li>
-                <li>
-                    <a href="#linkedin">
-                        LinkedIn <i className="fa fa-linkedin" aria-hidden="true"></i> 
-                    </a>
-                </li>
-                </ul>
-                <p className="footer-email">Green@Credit.com</p>
+          <div className="footer-section">
+            <div className="brand">
+              <FaLeaf className="brand-icon" />
+              <h3>GreenCredit</h3>
             </div>
+            <p>
+              Empowering sustainable futures through innovative carbon credit
+              solutions and environmental stewardship.
+            </p>
+            <div className="social-links">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
+          </div>
 
-            <div className="footer-locations">
-                <h4>OUR LOCATIONS</h4>
-                    <div className="location-row">
-                        <p>
-                            123 Anywhere St., Any City, ST 12345
-                        </p>
-                        <p>
-                            456 Somewhere Ave., Some City, ST 67890
-                        </p>
-                        <p>
-                            789 Elsewhere Blvd., Other City, ST 54321
-                        </p>
-                    </div>
+          <div className="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="#">Carbon Credits</Link>
+              </li>
+              <li>
+                <Link to="/profile">My Account</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="footer-section">
+            <h3>Our Projects</h3>
+            <ul>
+              <li>Renewable Energy</li>
+              <li>Energy Efficiency</li>
+              <li>Waste Management</li>
+              <li>Reforestation</li>
+            </ul>
+          </div>
+
+          <div className="footer-section">
+            <h3>Contact Info</h3>
+            <div className="contact-info">
+              <p>
+                <FaPhone className="contact-icon" />
+                <span>+1 (555) 123-4567</span>
+              </p>
+              <p>
+                <FaEnvelope className="contact-icon" />
+                <span>contact@greencredit.com</span>
+              </p>
+              <p>
+                <FaMapMarkerAlt className="contact-icon" />
+                <span>123 Green Street, Eco City</span>
+              </p>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>
+          &copy; {new Date().getFullYear()} GreenCredit. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
-}
+};
 
 export default Footer;

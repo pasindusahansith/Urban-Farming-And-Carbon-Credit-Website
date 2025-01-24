@@ -1,0 +1,139 @@
+#carbon-credit-order-form {
+    max-width: 1200px; /* Adjusted width for better balance */
+    margin: 50px auto; /* Center form with a bit of space from top */
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Reduced gap between elements */
+    transition: none; /* Removed transition for smoother performance */
+}
+
+/* Form Title */
+.form-title {
+    font-size: 32px; /* Reduced size for better fit */
+    font-weight: 800;
+    text-align: center;
+    color: #1d562b;
+    margin-bottom: 20px;
+    grid-column: span 2; /* Spans both columns */
+    text-transform: uppercase;
+}
+
+/* Paragraph under the title */
+.form-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    grid-column: span 2; /* Spans both columns */
+}
+
+/* Carbon credit form styling */
+.carbon-credit-form {
+    display: contents; /* Form elements directly affected by grid */
+}
+
+/* Form group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Slightly reduced spacing */
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input, Select, and Textarea styling */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px; /* Reduced font size */
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Focus effect for inputs */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1d562b;
+    outline: none;
+}
+
+/* Textarea style */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #1d562b;
+    color: white;
+    font-size: 16px; /* Smaller button text */
+    padding: 12px 24px; /* Smaller padding */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    grid-column: span 2; /* Span both columns */
+    text-align: center;
+}
+
+/* Hover effect for the button */
+.submit-btn:hover {
+    background-color: #174d27;
+}
+
+/* Add animation when form is focused */
+#carbon-credit-order-form:focus-within {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #carbon-credit-order-form {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 28px;
+    }
+
+    .form-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px; /* Consistent font size */
+        padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 14px; /* Smaller button text */
+        padding: 10px 20px; /* Reduced padding */
+    }
+}
+
+/* Optional: Remove hover effects on mobile */
+@media (max-width: 480px) {
+    .submit-btn:hover {
+        background-color: #1d562b;
+    }
+}
